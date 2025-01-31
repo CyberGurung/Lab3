@@ -1,72 +1,76 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, rgba(0, 150, 136, 0.7), rgba(255, 87, 34, 0.7));
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .container {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    transition: background 0.6s ease;
+    color: white;
+}
+
+.container {
     text-align: center;
-  }
-  
-  h1 {
-    font-size: 24px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #218838;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    background: #f8f9fa;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: color 0.4s ease;
+}
+
+.button-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  li button {
-    background: #dc3545;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 4px;
+    justify-content: center;
+    gap: 15px;
+}
+
+.color-btn {
+    padding: 15px 25px;
+    font-size: 1.2rem;
     cursor: pointer;
-  }
-  
-  li button:hover {
-    background: #c82333;
-  }
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.color-btn:hover {
+    transform: scale(1.1);
+}
+
+.color-btn:active {
+    transform: scale(0.95);
+}
+
+.color-btn:nth-child(1) {
+    background-color: red;
+}
+
+.color-btn:nth-child(2) {
+    background-color: blue;
+}
+
+.color-btn:nth-child(3) {
+    background-color: green;
+}
+
+.color-btn:nth-child(4) {
+    background-color: yellow;
+}
